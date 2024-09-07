@@ -21,6 +21,27 @@
                 overflow: hidden;
             }
 
+            .frog1 {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .text1 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 10vw;
+                font-weight: bold;
+                text-align: center;
+                width: 100%;
+                height: auto;
+                z-index: 2; 
+                opacity: 0.7;
+            }
+
             .sep {
                 position: relative;
                 background-color: rgb(30, 122, 108);
@@ -29,7 +50,7 @@
                 color: rgb(138, 181, 174);
             }
 
-            nav{
+            nav {
                 float: left;
                 width: 30%;
                 height: 100vh;
@@ -38,60 +59,81 @@
                 color: rgb(16, 84, 74);
             }
 
-            nav ul{
+            .frog2, .frog3, .frog4 {
+                width: 100%; 
+                height: auto;
+                object-fit: contain;
+            }
+
+            nav ul {
                 list-style-type: none;
                 padding: 0;
             }
 
-            article{
+            article {
                 float: left;
                 width: 70%;
-                height: 100vh;
+                height: 120vh;
                 padding: 0;
                 color: rgb(16, 84, 74);
+                position: relative;
+            }
+
+            .article-background {
+                width: 100%;
+                height: 100vh;
                 background-image: url(https://i.pinimg.com/originals/8f/a3/d7/8fa3d72963bb35065df299826594aba1.jpg);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
-                opacity: 50%;
-            }
-
-            .frog1 {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-            .text {
+                opacity: 40%;
                 position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-                font-size: 10vw;
-                opacity: 0.7;
-                font-weight: bold;
-                text-align: center;
-                width: 100%;
-                height: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                line-height: 1.2; 
+                top: 0;
+                left: 0;
+                z-index: 1;
             }
 
-            header{
+            /* Set a consistent width and space for all images */
+            .frog5, .frog6, .frog7 {
+                width: 300px;
+                height: auto;
+                object-fit: contain;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .flex-container {
+                display: flex;
+                align-items: center; 
+                gap: 20px;
+                z-index: 2;
+                margin-bottom: 20px;
+            }
+
+            .text2 {
+                position: relative;
+                z-index: 2;
+                font-size: 25px;
+                line-height: 1.2; 
+                color: rgb(16, 84, 74);
+                padding: 20px;
+            }
+
+            header {
                 position: relative;
                 width: 100%;
                 height: 100vh;
             }
 
             .common {
-                font-size:40px;
+                font-size: 40px;
                 text-align: center;
             }
 
-            .characteristics{
+            .characteristics {
                 line-height: 2;
             }
 
@@ -101,7 +143,7 @@
         <header>
             <div class="container">
                 <img class="frog1" src="https://cdn.mos.cms.futurecdn.net/39CUYMP8vJqHAYGVzUghBX-1200-80.jpg">
-                <div class="text">FROGS</div>
+                <div class="text1">FROGS</div> <!-- Header title here -->
             </div>
         <section>
             <section class="sep"> 
@@ -113,21 +155,49 @@
                     <ul>
                         <li>
                             <h3>Protruding Eyes</h3>
+                            <img class="frog2" src="https://www.treehugger.com/thmb/9MAMLAa_SbWgRWB8kvDp_7S7xzA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2016__12__jaymi-heimbuch-_JH_1705-01-afa092395ad9484cbef94a56e10a2e96.jpg">
                         </li>
                         <li>
                             <h3>Webbed Feet</h3>
+                            <img class="frog3" src="https://live.staticflickr.com/1152/1383005372_840358dfdd_b.jpg">
                         </li>
                         <li>
                             <h3>Powerful Hops</h3>
+                            <img class="frog4" src="https://static01.nyt.com/images/2018/10/10/autossell/GettyImages-523735568/GettyImages-523735568-superJumbo.jpg">
                         </li>
                     </ul>
                 </div>
             </nav>
         </section>
         <article>
-            <p>
-                xoxo
-            </p>
+            <div class="article-background"></div>
+            <div class="text2">
+                <h1>Species You May Recognize</h1>
+                <ul>
+                    <li class="flex-container">
+                        <img class="frog5" src="https://i.natgeofe.com/n/0fd3c589-e3cc-487f-8d22-4c6b3f28bdca/american-bullfrog_02.JPG?wp=1&w=1084.125&h=719.25">
+                        <div>
+                            <h3>American Bullfrog</h3>
+                            <div class="summary">The American Bullfrog, scientific name Lithobates catesbeianus is the largest of all American frogs!</div>                        
+                        </div>
+                    </li>
+                    <li class="flex-container">
+                        <img class="frog6" src="https://i.natgeofe.com/k/8fa25ea4-6409-47fb-b3cc-4af8e0dc9616/red-eyed-tree-frog-on-leaves-3-2.jpg">
+                        <div>
+                            <h3>Red-Eyed Tree Frog</h3>
+                            <div class="summary">Red-Eyed Tree Frogs, scientific name Agalychnis callidryas, have special footpads that help them stick to the canopy of their rainforest home!</div>                        
+                        </div>
+                    </li>
+                    <li class="flex-container">
+                        <img class="frog7" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYH2RUgFhsV17Vm7GO7LviF7HEzOiojIkKQw&s">
+                        <div>
+                            <h3>Poison Dart Frog</h3>
+                            <div class="summary">Poison Dart Frogs, scientific name Dendrobatidae, come in a variety of bright colors that all say one thing- "I'm toxic! Don't eat me!"</div>                        
+                        </div>
+                    </li>
+                </ul>
+                <h5>Learn more about frogs at https://www.nationalgeographic.com/animals/amphibians!</h5>
+            </div>
         </article>
     </body>
-</html> 
+</html>
