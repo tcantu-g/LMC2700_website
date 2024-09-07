@@ -1,202 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <title>WebsiteAboutFrogs</title>
     <head>
-        <style> 
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-
-            html, body {
-                height: 100%;
-            }
-
-            .container {
-                position: relative;
-                width: 100%;
-                height: 50vh;
-                margin: 0;
-                overflow: hidden;
-            }
-
-            .frog1 {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-            .text1 {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-                font-size: 10vw;
-                font-weight: bold;
-                text-align: center;
-                width: 100%;
-                height: auto;
-                z-index: 2; 
-                opacity: 0.7;
-            }
-
-            .sep {
-                position: relative;
-                background-color: rgb(30, 122, 108);
-                height: 2vh;
-                width: 100%;
-                color: rgb(138, 181, 174);
-            }
-
-            nav {
-                float: left;
-                width: 30%;
-                height: 100vh;
-                padding: 20px;
-                background-color: rgb(236, 245, 243);
-                color: rgb(16, 84, 74);
-            }
-
-            .frog2, .frog3, .frog4 {
-                width: 100%; 
-                height: auto;
-                object-fit: contain;
-            }
-
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-            article {
-                float: left;
-                width: 70%;
-                height: 120vh;
-                padding: 0;
-                color: rgb(16, 84, 74);
-                position: relative;
-            }
-
-            .article-background {
-                width: 100%;
-                height: 100vh;
-                background-image: url(https://i.pinimg.com/originals/8f/a3/d7/8fa3d72963bb35065df299826594aba1.jpg);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                opacity: 40%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 1;
-            }
-
-            /* Set a consistent width and space for all images */
-            .frog5, .frog6, .frog7 {
-                width: 300px;
-                height: auto;
-                object-fit: contain;
-            }
-
-            ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-            .flex-container {
-                display: flex;
-                align-items: center; 
-                gap: 20px;
-                z-index: 2;
-                margin-bottom: 20px;
-            }
-
-            .text2 {
-                position: relative;
-                z-index: 2;
-                font-size: 25px;
-                line-height: 1.2; 
-                color: rgb(16, 84, 74);
-                padding: 20px;
-            }
-
-            header {
-                position: relative;
-                width: 100%;
-                height: 100vh;
-            }
-
-            .common {
-                font-size: 40px;
-                text-align: center;
-            }
-
-            .characteristics {
-                line-height: 2;
-            }
-
-        </style>
+        <title>WebsiteAboutFrogs</title>
+        <!-- Link to external CSS file -->
+        <link rel="website-css" href="website-css.css">
     </head>
     <body>
         <header>
             <div class="container">
-                <img class="frog1" src="https://cdn.mos.cms.futurecdn.net/39CUYMP8vJqHAYGVzUghBX-1200-80.jpg">
+                <img class="frog1" src="https://cdn.mos.cms.futurecdn.net/39CUYMP8vJqHAYGVzUghBX-1200-80.jpg" alt="Frog">
                 <div class="text1">FROGS</div> <!-- Header title here -->
             </div>
-        <section>
-            <section class="sep"> 
-                <p>Website by Tatiana Cantu-Gonzalez</p>
-            </section>
-            <nav>
-                <h1 class="common">Common Features</h1>
-                <div class="characteristics">
-                    <ul>
-                        <li>
-                            <h3>Protruding Eyes</h3>
-                            <img class="frog2" src="https://www.treehugger.com/thmb/9MAMLAa_SbWgRWB8kvDp_7S7xzA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2016__12__jaymi-heimbuch-_JH_1705-01-afa092395ad9484cbef94a56e10a2e96.jpg">
-                        </li>
-                        <li>
-                            <h3>Webbed Feet</h3>
-                            <img class="frog3" src="https://live.staticflickr.com/1152/1383005372_840358dfdd_b.jpg">
-                        </li>
-                        <li>
-                            <h3>Powerful Hops</h3>
-                            <img class="frog4" src="https://static01.nyt.com/images/2018/10/10/autossell/GettyImages-523735568/GettyImages-523735568-superJumbo.jpg">
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        </header>
+        <section class="sep"> 
+            <p>Website by Tatiana Cantu-Gonzalez</p>
         </section>
+        <nav>
+            <h1 class="common">Common Features</h1>
+            <div class="characteristics">
+                <ul>
+                    <li>
+                        <h3>Protruding Eyes</h3>
+                        <img class="frog2" src="https://www.treehugger.com/thmb/9MAMLAa_SbWgRWB8kvDp_7S7xzA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2016__12__jaymi-heimbuch-_JH_1705-01-afa092395ad9484cbef94a56e10a2e96.jpg" alt="Frog Eyes">
+                    </li>
+                    <li>
+                        <h3>Webbed Feet</h3>
+                        <img class="frog3" src="https://live.staticflickr.com/1152/1383005372_840358dfdd_b.jpg" alt="Frog Feet">
+                    </li>
+                    <li>
+                        <h3>Powerful Hops</h3>
+                        <img class="frog4" src="https://static01.nyt.com/images/2018/10/10/autossell/GettyImages-523735568/GettyImages-523735568-superJumbo.jpg" alt="Frog Hops">
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <article>
             <div class="article-background"></div>
             <div class="text2">
                 <h1>Species You May Recognize</h1>
                 <ul>
                     <li class="flex-container">
-                        <img class="frog5" src="https://i.natgeofe.com/n/0fd3c589-e3cc-487f-8d22-4c6b3f28bdca/american-bullfrog_02.JPG?wp=1&w=1084.125&h=719.25">
+                        <img class="frog5" src="https://i.natgeofe.com/n/0fd3c589-e3cc-487f-8d22-4c6b3f28bdca/american-bullfrog_02.JPG?wp=1&w=1084.125&h=719.25" alt="American Bullfrog">
                         <div>
                             <h3>American Bullfrog</h3>
                             <div class="summary">The American Bullfrog, scientific name Lithobates catesbeianus is the largest of all American frogs!</div>                        
                         </div>
                     </li>
                     <li class="flex-container">
-                        <img class="frog6" src="https://i.natgeofe.com/k/8fa25ea4-6409-47fb-b3cc-4af8e0dc9616/red-eyed-tree-frog-on-leaves-3-2.jpg">
+                        <img class="frog6" src="https://i.natgeofe.com/k/8fa25ea4-6409-47fb-b3cc-4af8e0dc9616/red-eyed-tree-frog-on-leaves-3-2.jpg" alt="Red-Eyed Tree Frog">
                         <div>
                             <h3>Red-Eyed Tree Frog</h3>
                             <div class="summary">Red-Eyed Tree Frogs, scientific name Agalychnis callidryas, have special footpads that help them stick to the canopy of their rainforest home!</div>                        
                         </div>
                     </li>
                     <li class="flex-container">
-                        <img class="frog7" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYH2RUgFhsV17Vm7GO7LviF7HEzOiojIkKQw&s">
+                        <img class="frog7" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYH2RUgFhsV17Vm7GO7LviF7HEzOiojIkKQw&s" alt="Poison Dart Frog">
                         <div>
                             <h3>Poison Dart Frog</h3>
                             <div class="summary">Poison Dart Frogs, scientific name Dendrobatidae, come in a variety of bright colors that all say one thing- "I'm toxic! Don't eat me!"</div>                        
                         </div>
                     </li>
                 </ul>
-                <h5>Learn more about frogs at https://www.nationalgeographic.com/animals/amphibians!</h5>
+                <h5>Learn more about frogs at <a href="https://www.nationalgeographic.com/animals/amphibians" target="_blank">National Geographic</a>!</h5>
             </div>
         </article>
     </body>
